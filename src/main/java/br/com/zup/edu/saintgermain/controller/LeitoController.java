@@ -31,6 +31,8 @@ public class LeitoController {
 		
 		leito.reservar();
 		
+		repository.save(leito);
+		
 		return ResponseEntity.noContent().build();
 	}
 	
